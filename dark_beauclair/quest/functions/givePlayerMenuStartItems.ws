@@ -1,9 +1,8 @@
-﻿exec function db_debugChar(){
+﻿quest function DB_givePlayerMenuStartItems() {
 	thePlayer.inv.AddAnItem('Bread', 100);
 	thePlayer.inv.AddAnItem('Illusion Medallion');
 	thePlayer.inv.AddAnItem('q106_magic_oillamp');
 	thePlayer.inv.AddAnItem('Potestaquisitor');
-	thePlayer.inv.AddAnItem('Illusion Medallion');
 	
 	thePlayer.inv.AddAnItem('Soltis Vodka');
 	thePlayer.inv.AddAnItem('Cornucopia');
@@ -15,14 +14,7 @@
 	thePlayer.inv.AddAnItem('Black Blood 3');
 	thePlayer.inv.AddAnItem('Thunderbolt 3');
 	thePlayer.inv.AddAnItem('Full Moon 3');
-	thePlayer.inv.AddAnItem('Full Moon 3');
 	
-	thePlayer.inv.AddAnItem('db_item_q_mq_find_sunstone_sunstone');
-	thePlayer.inv.AddAnItem('db_item_q_mq_collect_artifacts_wedding_ring');
-	thePlayer.inv.AddAnItem('db_item_q_mq_collect_artifacts_cursed_blade');
-	thePlayer.inv.AddAnItem('db_item_q_mq_collect_artifacts_broken_crystal');
-	thePlayer.inv.AddAnItem('db_item_q_mq_collect_artifacts_cursed_amulet');
-
 	thePlayer.inv.AddAnItem('Greater mutagen red', 4);
 	thePlayer.inv.AddAnItem('Greater mutagen green', 4);
 	thePlayer.inv.AddAnItem('Greater mutagen blue', 4);
@@ -34,6 +26,6 @@
 	thePlayer.inv.AddAnItem('armor_repair_kit_1', 25);
 	thePlayer.inv.AddAnItem('armor_repair_kit_2', 25);
 	thePlayer.inv.AddAnItem('armor_repair_kit_3', 25);
-
-	GetWitcherPlayer().DisplayHudMessage('Added Stuff to your Inventory');
+	
+	thePlayer.inv.AddAnItem('Horse Bag 3');
 }
